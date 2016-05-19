@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{01966ED1-7521-47FF-AC1A-FA4BACACD468}</ProjectGuid>
+    <RootNamespace>Allegro5Tut</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>allegro-5.0.10-monolith-md-debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Platformer1\Platformer\Animation.cpp" />
+    <ClCompile Include="..\..\Platformer1\Platformer\FadeAnimation.cpp" />
+    <ClCompile Include="..\..\Platformer1\Platformer\FileManager.cpp" />
+    <ClCompile Include="..\..\Platformer1\Platformer\GamePlayScreen.cpp" />
+    <ClCompile Include="..\..\Platformer1\Platformer\GameScreen.cpp" />
+    <ClCompile Include="..\..\Platformer1\Platformer\InputManager.cpp" />
+    <ClCompile Include="..\..\Platformer1\Platformer\Layer.cpp" />
+    <ClCompile Include="..\..\Platformer1\Platformer\Main.cpp" />
+    <ClCompile Include="..\..\Platformer1\Platformer\Map.cpp" />
+    <ClCompile Include="..\..\Platformer1\Platformer\MenuManager.cpp" />
+    <ClCompile Include="..\..\Platformer1\Platformer\Player.cpp" />
+    <ClCompile Include="..\..\Platformer1\Platformer\ScreenManager.cpp" />
+    <ClCompile Include="..\..\Platformer1\Platformer\SplashScreen.cpp" />
+    <ClCompile Include="..\..\Platformer1\Platformer\SpriteSheetAnimation.cpp" />
+    <ClCompile Include="..\..\Platformer1\Platformer\Tile.cpp" />
+    <ClCompile Include="..\..\Platformer1\Platformer\TitleScreen.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Platformer1\Platformer\Animation.h" />
+    <ClInclude Include="..\..\Platformer1\Platformer\FadeAnimation.h" />
+    <ClInclude Include="..\..\Platformer1\Platformer\FileManager.h" />
+    <ClInclude Include="..\..\Platformer1\Platformer\GamePlayScreen.h" />
+    <ClInclude Include="..\..\Platformer1\Platformer\GameScreen.h" />
+    <ClInclude Include="..\..\Platformer1\Platformer\InputManager.h" />
+    <ClInclude Include="..\..\Platformer1\Platformer\Layer.h" />
+    <ClInclude Include="..\..\Platformer1\Platformer\Map.h" />
+    <ClInclude Include="..\..\Platformer1\Platformer\MenuManager.h" />
+    <ClInclude Include="..\..\Platformer1\Platformer\Player.h" />
+    <ClInclude Include="..\..\Platformer1\Platformer\ScreenManager.h" />
+    <ClInclude Include="..\..\Platformer1\Platformer\SplashScreen.h" />
+    <ClInclude Include="..\..\Platformer1\Platformer\SpriteSheetAnimation.h" />
+    <ClInclude Include="..\..\Platformer1\Platformer\Tile.h" />
+    <ClInclude Include="..\..\Platformer1\Platformer\TitleScreen.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Platformer1\Platformer\Image.bmp" />
+    <None Include="..\..\Platformer1\Platformer\Image.png" />
+    <None Include="..\..\Platformer1\Platformer\tilesheet1.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

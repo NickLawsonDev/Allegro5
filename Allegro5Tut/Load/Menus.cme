@@ -1,0 +1,12 @@
+Load=[Title]
+
+Load=[Position][Axis][Font][Animation]
+[400 300][2][Orbitron Black.ttf][Fade]
+
+Load=[Item]
+[New Game]
+[Load Game]
+[Options]
+[Credits]
+
+EndLoad=[Title]
